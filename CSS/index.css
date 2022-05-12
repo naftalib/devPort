@@ -1,0 +1,125 @@
+/* Variables */
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #191D1F;
+    --bg-color2: black;
+    --primary-color: #7FDFDD;
+    --secondary-color: #ff7235;
+    --text-color: #ffff;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables end */
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+  }
+
+  /* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  section {
+    max-width: 1100px;
+    margin: auto;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* CSS Resets end */
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color2);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav h1 {
+    color: var(--primary-color);
+  }
+  nav h4 {
+    color: var(--secondary-color);
+  }
+  #theme{
+    display: flex;
+    justify-content: space-around;
+  }
+  #theme button {
+      border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding-left:20px;
+    padding-right:20px;
+  }
+  #theme button:hover {
+    color: var(--primary-color) ;
+  }
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+  .nav-deviders{
+    color: var(--text-color);
+  }
+  .social-links{
+    display: flex;
+    gap: 1.9rem;
+  }
+  .fa {
+    color: var(--primary-color);
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa:hover {
+      color: var(--secondary-color);
+      transition: var(--transition);
+  }
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  /* Navbar ends */
