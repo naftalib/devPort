@@ -27,13 +27,13 @@ navLink.forEach((link) =>
 );
 
 // scroll to top functionality
-// scrollUp.addEventListener("click", () => {
-//   window.scrollTo({
-//     top: 0,
-//     left: 0,
-//     behavior: "smooth",
-//   });
-// });
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
 themeBtnLight.addEventListener("click", () =>{
  root.style.setProperty('--bg-color', 'whitesmoke')

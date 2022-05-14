@@ -36,6 +36,7 @@
   section {
     max-width: 1100px;
     margin: auto;
+    border: 1px solid pink;
   }
   ul {
     list-style-type: none;
@@ -123,6 +124,57 @@ nav {
     display: none;
   }
   /* Navbar ends */
+
+  /* Hero section */
+
+.hero {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  padding: 0.5rem;
+  /* margin: auto; */
+}
+
+
+.bio {
+  width: 45rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+/* Hero section ends */
+
+/* More about */
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem;
+}
+
+.more-about h3 {
+  padding-top: 20px;
+  margin-bottom: var(--bottom-margin);
+  /* text-align: center; */
+  font-weight:600;
+}
+
+.more-about p {
+  /* line-height: var(--line-height);
+  padding: 0.4rem; */
+}
+/* More about ends */
+
 
   /* Scroll to top button */
 .scroll-up {
