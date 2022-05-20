@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --font-family: "Roboto", sans-serf;
+    --font-family: "Roboto" sans-serf;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -19,12 +19,13 @@
   /* Variables end */
 
   html {
+    font-family: sans-serif;
     scroll-behavior: smooth;
   }
   body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: var(--font-family);
+
   }
 
   /* CSS Resets */
@@ -36,7 +37,7 @@
   section {
     max-width: 1100px;
     margin: auto;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
   }
   ul {
     list-style-type: none;
@@ -138,9 +139,8 @@ nav {
   /* margin: auto; */
 }
 
-
 .bio {
-  width: 45rem;
+  max-width: 1100px;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -170,11 +170,104 @@ nav {
 }
 
 .more-about p {
-  /* line-height: var(--line-height);
-  padding: 0.4rem; */
+  line-height: var(--line-height);
+  padding: 0.4rem;
 }
 /* More about ends */
 
+
+/* Skills section */
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: auto;
+  /* text-align: center; */
+  margin: 2.5rem 0;
+}
+
+.skills-container hr{
+  color: var(--text-color);
+  opacity: 30%;
+}
+
+.skill-list h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.skill-list {
+ display: flex;
+ flex-direction: column;
+ color: var(--primary-color);
+ font-weight: var(--bold-font);
+ padding: 5px;
+}
+
+.skill-items{
+  display: flex;
+}
+.skill-list span{
+  color: var(--secondary-color);
+  padding-right: 10px;
+}
+
+.skills-ul{
+  padding: 5px;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+/* Skills section ends */
+
+/* Project section */
+
+#projects-section{
+  padding: 10px;
+  background-color: var(--bg-color2);
+}
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.projects-container h2{
+  text-decoration: underline;
+}
+.projects-card-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.project-display-card-js{
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  height: 500px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5%;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  padding: 10px;
+}
+
+.project-display-card-js img{
+text-align: center;
+border-radius: 5%;
+border: 1px solid orange;
+width: 80%;
+margin: 0 auto;
+}
+
+.project-each{
+  padding: 30px;
+  margin: 0 auto;
+}
+
+
+/* Project section ends */
 
   /* Scroll to top button */
 .scroll-up {
@@ -200,7 +293,7 @@ nav {
 }
 
   /* Media queries for responsiveness */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   nav {
     padding: 1.5rem 1rem;
   }
@@ -230,6 +323,10 @@ nav {
   .icon {
     width: 5.875rem;
     height: 5.25rem;
+  }
+
+  .projects-card-container{
+    flex-direction: column;
   }
 
 }

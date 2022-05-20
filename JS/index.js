@@ -50,70 +50,8 @@ themeBtnDark.addEventListener("click", () =>{
   root.style.setProperty('--primary-color', '#7FDFDD')
  } )
 
-//  const projects = {
-//   one:{
-//       img: "./assets/DATA/imgs/GoogleKeep.JPG",
-//       title: 'Google Keep clone',
-//       description: `This project was the first of a JS boot camp which I completed. The aim was to mimic the Google Keep app's basic functionality of taking and storing notes. Check out my code on GitHub by clicking on the link below`,	
-//       code: 'https://github.com/naftalib/GoogleKeepClone',
-//       link: 'https://naftalib.github.io/GoogleKeepClone/'
-//   },
-//   two:{
-//       img:"./assets/DATA/imgs/ToDo.JPG",
-//       title: 'To do list',
-//       description: `This app was part of a course on React in which I learned and mastered core React concepts such as state manipulation, conditional rendering, props and componant styling`,
-//       code: 'https://github.com/naftalib/todoApp',
-//       link: 'https://naftalib.github.io/todoApp/',
-  
-//   },
-//   three:{
-//       img:"./assets/DATA/imgs/MG.JPG",
-//       title: 'Meme Generator',
-//       description: `This app was part of a React course which covered lifecycle methods, API calls and React forms`,
-//       code: 'https://github.com/naftalib/MemeGenerator',
-//       link: "https://naftalib.github.io/MemeGenerator/" 
-//   }
-// }
-
-// const skills = [
-// "HTML", 
-// "CSS",
-// "JavaScript",
-// "React.js",
-// "Node.js",
-// "Git",
-// "Google"
-// ]
-
-// function test(data){
-// return `
-// <div class="project-display-card">
-// <div class="project-contents">
-//   <img src=${data.img} alt=${data.title}>
-//   <h2>${data.title}</h2>
-//   <p>${data.description}</p>
-//   <a href=${data.code} target="_blank" class="project-links">Code</a><br>
-//   <a href=${data.link} target="_blank" class="project-links">Check it out</a>
-// </div>
-// </div>
-
-// `
-// }
-
-// document.querySelector("#project-1").innerHTML = `${test(projects.one)}`
-// document.querySelector("#project-2").innerHTML = `${test(projects.two)}`
-// document.querySelector("#project-3").innerHTML = `${test(projects.three)}`
 
 
-// const skillsList = skills.map(skill=>{
-// return `<ul>
-//     <li>${skill}</li>  
-//   </ul>`
-// })
 
-
-// console.log(skillsList)
-
-// document.querySelector('#skills').innerHTML = skillsList.join("")
 
  
