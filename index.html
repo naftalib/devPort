@@ -17,20 +17,24 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
 
-    <title>NaftyDev</title>
+    <title>NafDev</title>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
-    
+        <!-- Title -->
         <div><h1>Naftali Breuning</h1><h4>web developer</h4></div>
-  
+        <!-- S-M Links -->
         <div class="social-links">
-            <i href="#" class="fa fa-linkedin" ></i>
+            <a  href="https://www.linkedin.com/in/naftalib/" 
+            class="fa fa-linkedin" >
+          </a>
             <p class="nav-deviders"> || </p>
-            <i href="#" class="fa fa-github" ></i>
+            <a href="https://github.com/naftalib" 
+            class="fa fa-github" >
+          </a>
         </div>
-  
+          <!-- light-dark togle -->
         <div id="theme">
           <button id="light-theme-btn">light</button>
           <p class="nav-deviders"> || </p>
@@ -38,13 +42,24 @@
         </div>
   
         <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <p class="nav-deviders"> || </p>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <p class="nav-deviders"> || </p>
-          <li><a href="#" class="nav-link">Projects</a></li>
-          <p class="nav-deviders"> || </p>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <p class="nav-deviders"> || 
+          </p>
+          <li>
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <p class="nav-deviders"> || 
+          </p>
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <p class="nav-deviders"> || 
+          </p>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
   
         <button class="burger-menu" id="burger-menu">
@@ -81,7 +96,7 @@
         </section>
 
            <!-- Skills section -->
-    <section>
+    <section id="skills">
       <div class="skills-container">
         <div class="skill-list">
           <h2>My Main Skills</h2>
@@ -94,20 +109,12 @@
         <div id="skills-row-2">
        </div>
       </div>
-      <!-- <h2>Other Skills</h2>
-      <div class="skills-list" id="skills-row-2">
-        <div class="skills-list">
-          <p><span>o</span>Vue.js</p>
-          <p><span>o</span>Mongo.DB</p>
-          <p><span>o</span>JavaScript</p>
-        </div>
-      </div>  -->
       </div>
       
     </section>
 
     <!-- Projects section -->
-    <main id="projects-section">
+    <main id="projects">
       <section class="projects-container">
         <h2 class="projects-title">Featured Projects</h2>
           <div class="projects-card-container">
@@ -130,9 +137,45 @@
       </section>      
     </main>
 
-    <section>
+  <!-- Contact section -->
+
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-info">
+        <h3>
+          <span>o</span>
+          naftalib212@gmail.com
+        </h3>
+        <h3>
+          <span>o</span>
+          +972 53 31 555 34
+        </h3>
+        <h3>
+          <span>o</span>
+          <a href="https://github.com/naftalib">GitHub</a>
+        </h3>
+        <h3>
+          <span>o</span>
+          <a href="https://www.linkedin.com/in/naftalib/">LinkeIn</a>
+          </h3>   
+      </div>
+
       
     </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer">
+        <p>
+          Built by
+          <span>naftalib</span>
+          using HTML CSS & Vanilla JS!
+        </p>
+         <p>||</p>
+        <p>For a free generic copy of this porfolio site click here</p> 
+      </div>
+    </footer>
 
 
         <!-- Scroll to top -->

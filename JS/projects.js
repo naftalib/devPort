@@ -38,10 +38,13 @@ const projects = {
   <div class="project-display-card-js">
     <img src=${data.img} alt=${data.title}>
     <h2>${data.title}</h2>
-    <p>${data.description}</p>
-    <a href=${data.code} target="_blank" class="project-links">Code</a><br>
-    <a href=${data.link} target="_blank" class="project-links">Check it out</a>
-
+        <p>${data.description}</p>
+        <div class="project-links">
+        <ul>
+            <li><a href=${data.code} target="_blank">Inspect the Code</a></li>
+            <li><a href=${data.link} target="_blank">Check it out this project</a></li>
+        </ul> 
+        </div>
   </div>
 
   
